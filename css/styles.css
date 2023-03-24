@@ -10,8 +10,9 @@
 
 body{
     font-family: Roboto, sans-serif;
+    font-size: 16px;
     letter-spacing: 0.03em;
-    color: var(--bg-first-color);
+    color: var(--first-color);
     background-color: var(--fourth-color);
 }
 .list{
@@ -21,13 +22,20 @@ body{
     text-decoration: none;
 }
 
+        /*   хедер   */
+.address-mail, .address-tel{
+    color: var(--second-color);
+}
+/*.address-mail{
+    color: var(--third-color);
+}*/
+
         /*  логотип     */
 .logo{
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--third-color);
 }
 .color-word{
@@ -42,27 +50,37 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.navigation:hover, navigation:focus{
+.navigation:hover, .navigation:focus,
+.address-mail:hover, .address-mail:focus,
+.address-tel:hover, .address-tel:focus{
     color: var(--third-color);
 }
-.active{
+.active-page{
     color: var(--third-color);
-}
-
-        /*   хедер   */
-.header-address{
-    color: var(--second-color);
 }
 
         /*   кнопка   */
 .btn{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+}
+.btn-order{
     color: var(--fourth-color);
     background-color: var(--third-color);
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.87;
-    text-align: center;
     letter-spacing: 0.06em;
+}
+
+.btn-no-active{
+    background-color: var(--bg-second-color);
+    
+}
+.btn-active{
+    background-color: var(--third-color);
+    color: var(--fourth-color);
 }
 
         /*   Секція герой   */
@@ -87,13 +105,15 @@ body{
     text-transform: uppercase;
 }
 .section-features .text{
-    font-weight: 400;
+    color: var(--second-color);
     font-size: 14px;
     line-height: 1.71;
 }
 
         /*   Секція чим ми займаємось   */
-.section-works .title{
+        /*   Секція наша команда   */
+.section-works .title,
+.section-team .title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -103,21 +123,32 @@ body{
 .section-team{
     background-color: var(--bg-second-color);
 }
-.section-team .title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-}
 .section-team .team-name{
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 .section-team .team-position{
-    font-weight: 400;
-    font-size: 16px;
+    color: var(--second-color);
     line-height: 1.19;
+}
+
+        /*   Секція проєкти   */
+.section-project .btn:hover,
+.section-project .btn:focus{
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+.section-project .title{
+    color: var(--first-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.section-project .text{
+    color: var(--second-color);
+    line-height: 1.87;
 }
 
         /*   футер   */
@@ -126,7 +157,6 @@ footer{
 }
 .footer-address{
     color: var(--fourth-color);
-    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
