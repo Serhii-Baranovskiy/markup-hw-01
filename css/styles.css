@@ -26,9 +26,6 @@ body{
 .address-mail, .address-tel{
     color: var(--second-color);
 }
-/*.address-mail{
-    color: var(--third-color);
-}*/
 
         /*  логотип     */
 .logo{
@@ -38,8 +35,11 @@ body{
     line-height: 1.19;
     color: var(--third-color);
 }
-.color-word{
+.color-logo-head{
     color: #000000;
+}
+.color-logo-foter{
+    color: var(--fourth-color);
 }
 
         /*  навігація   */
@@ -52,7 +52,8 @@ body{
 }
 .navigation:hover, .navigation:focus,
 .address-mail:hover, .address-mail:focus,
-.address-tel:hover, .address-tel:focus{
+.address-tel:hover, .address-tel:focus,
+.address-map:hover, .address-map:focus{
     color: var(--third-color);
 }
 .active-page{
@@ -72,6 +73,7 @@ body{
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .btn-no-active{
@@ -99,7 +101,6 @@ body{
 
         /*   Секція особливості   */
 .section-features .title{
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -114,7 +115,6 @@ body{
         /*   Секція наша команда   */
 .section-works .title,
 .section-team .title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
@@ -141,7 +141,6 @@ body{
 }
 .section-project .title{
     color: var(--first-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -163,4 +162,7 @@ footer{
 }
 .txt-color{
     color: rgba(255, 255, 255, 0.6);
+}
+.address-map{
+    color: var(--fourth-color);
 }
