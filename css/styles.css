@@ -12,18 +12,34 @@ body{
     font-family: Roboto, sans-serif;
     font-size: 16px;
     letter-spacing: 0.03em;
+
     color: var(--first-color);
     background-color: var(--fourth-color);
 }
 .list{
     list-style-type: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .link{
     text-decoration: none;
 }
+.section{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
         /*   хедер   */
-.address-mail, .address-tel{
+.block-address .address-mail,
+.block-address .address-tel{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--second-color);
 }
 
@@ -33,6 +49,7 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
     color: var(--third-color);
 }
 .color-logo-head{
@@ -43,8 +60,31 @@ body{
 }
 
         /*  навігація   */
+.section-nav{
+    display: flex;
+    align-items: center;
+}
+.block-nav .list-nav:not(:last-child){
+    margin-right: 50px;
+}
+.block-address .list-address:not(:first-child){
+    margin-left: 50px;
+}
+.block-nav .list{
+    display: flex;
+    margin-left: 93px;
+}
+.block-address{
+    display: flex;
+    margin-left: auto;
+}
 .navigation{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: inherit;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -68,12 +108,24 @@ body{
     text-align: center;
 }
 .btn-order{
+    width: 216px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 200px;
+
     color: var(--fourth-color);
     background-color: var(--third-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn-order:hover{
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .btn-no-active{
@@ -89,12 +141,22 @@ body{
 .section-hero{
     background-color: var(--bg-first-color);
 }
+.section-hero > .section{
+    text-align: center;
+}
 .section-hero .title{
+    width: 696px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding-top: 200px;
+
     color: var(--fourth-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -105,8 +167,17 @@ body{
     line-height: 1.14;
     text-transform: uppercase;
 }
+.section-features .list{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.block-features .list-features:not(:last-child){
+    margin-right: 30px;
+}
 .section-features .text{
     color: var(--second-color);
+
     font-size: 14px;
     line-height: 1.71;
 }
@@ -117,19 +188,52 @@ body{
 .section-team .title{
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.section-works .list{
+    display: flex;
+    margin-bottom: 94px;
+}
+.block-works .list-works:not(:last-child){
+    margin-right: 30px;
 }
 
         /*   Секція наша команда   */
 .section-team{
     background-color: var(--bg-second-color);
+    padding-bottom: 94px;
+}
+.section-team .title{
+    padding-top: 94px;
+}
+.section-team .list{
+    display: flex;
 }
 .section-team .team-name{
     font-weight: 500;
     line-height: 1.19;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .section-team .team-position{
     color: var(--second-color);
+
     line-height: 1.19;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.block-team .list-team:not(:last-child){
+    margin-right: 30px;
+}
+.list-team{
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
         /*   Секція проєкти   */
@@ -141,6 +245,7 @@ body{
 }
 .section-project .title{
     color: var(--first-color);
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -151,11 +256,22 @@ body{
 }
 
         /*   футер   */
-footer{
+.section-fooret{
     background-color: var(--bg-first-color);
+    
+}
+.section-fooret .logo{
+    display: block;
+    width: 145px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.section-fooret .footer-address{
+    padding-bottom: 60px;
 }
 .footer-address{
     color: var(--fourth-color);
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
