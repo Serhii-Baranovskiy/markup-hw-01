@@ -43,12 +43,16 @@ body{
 .section-header{
     border-bottom: 1px solid #ECECEC;;
 }
+.section-header .logo{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 .block-address .address-mail,
 .block-address .address-tel{
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     color: var(--second-color);
 }
@@ -101,8 +105,8 @@ body{
 }
 .navigation{
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     color: inherit;
 
@@ -167,9 +171,9 @@ body{
 
         /*   Секція герой   */
 .section-hero{
-    background-image: url('/images/bg-hero.jpg');
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/images/bg-hero.jpg');
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: var(--bg-first-color);
 }
 .section-hero > .container{
     text-align: center;
@@ -196,6 +200,9 @@ body{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .block-features,
 .block-works,
@@ -213,6 +220,23 @@ body{
 
     font-size: 14px;
     line-height: 1.71;
+}
+.block-icon-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+.features-icon-svg{
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+.block-icon-features:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
         /*   Секція чим ми займаємось  *************************** */
@@ -258,7 +282,78 @@ body{
 .list-team{
     text-align: center;
     border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--fourth-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.block-social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.social-network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+.social-network:not(:last-child){
+    margin-right: 10px;
+}
+.social-network:hover{
+    background-color: var(--third-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-network:hover .icon-social-network{
+    fill: var(--fourth-color);
+}
+.icon-social-network{
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+    fill: #AFB1B8;
+}
+
+        /*   Секція постійні клієнти  *********************************** */
+.section-clients .title{
+    font-size: 36px;
+    line-height: 1.17;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.block-clients{
+    display: flex;
+}
+.link-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.link-clients:hover{
+    cursor: pointer;
+    border: 1px solid var(--third-color);
+
+}
+.link-clients:hover .icon-clients{
+    fill: var(--third-color);
+}
+.list-clients:not(:last-child){
+    margin-right: 30px;
+}
+.icon-clients{
+    display: flex;
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
 }
 
         /*   Секція проєкти  *********************************** */
@@ -317,17 +412,64 @@ body{
 .section-fooret{
     background-color: var(--bg-first-color);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
-.section-fooret .footer-address{
+.section-fooret .container{
+    display: flex;
+}
+.block-footer-social .text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--fourth-color);
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.section-social{
+    display: flex;
+}
+.list-social{
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.link-social-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.list-social:not(:last-child){
+    margin-right: 10px;
+}
+.list-social .icon-social-network{
+    fill: var(--fourth-color);
+}
+.list-social:hover{
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+.block-address .footer-address{
     padding-top: 20px;
     padding-bottom: 60px;
 }
 .footer-address{
+    margin-top: 20px;
+
     color: var(--fourth-color);
 
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+}
+.block-footer-address{
+    margin-right: 70px;
 }
 .footer-address .address-mail{
     display: inline-block;
