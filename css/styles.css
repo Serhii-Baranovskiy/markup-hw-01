@@ -171,9 +171,13 @@ body{
 
         /*   Секція герой   */
 .section-hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                     url('/images/bg-hero.jpg');
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center;
 }
 .section-hero > .container{
     text-align: center;
@@ -291,7 +295,7 @@ body{
     justify-content: center;
     margin-bottom: 30px;
 }
-.social-network{
+.link-social-network{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,12 +305,14 @@ body{
 .social-network:not(:last-child){
     margin-right: 10px;
 }
-.social-network:hover{
+.link-social-network:hover,
+.link-social-network:focus{
     background-color: var(--third-color);
     border-radius: 50%;
     cursor: pointer;
 }
-.social-network:hover .icon-social-network{
+.link-social-network:hover .icon-social-network,
+.link-social-network:focus .icon-social-network{
     fill: var(--fourth-color);
 }
 .icon-social-network{
@@ -338,12 +344,14 @@ body{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.link-clients:hover{
+.link-clients:hover,
+.link-clients:focus{
     cursor: pointer;
     border: 1px solid var(--third-color);
 
 }
-.link-clients:hover .icon-clients{
+.link-clients:hover .icon-clients,
+.link-clients:focus .icon-clients{
     fill: var(--third-color);
 }
 .list-clients:not(:last-child){
@@ -451,7 +459,8 @@ body{
 .list-social .icon-social-network{
     fill: var(--fourth-color);
 }
-.list-social:hover{
+.link-social-footer:hover,
+.link-social-footer:focus{
     background-color: var(--third-color);
     cursor: pointer;
 }
