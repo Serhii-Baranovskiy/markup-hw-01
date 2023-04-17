@@ -162,6 +162,8 @@ body{
 .address-tel:hover, .address-tel:focus,
 .address-map:hover, .address-map:focus{
     color: var(--third-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .active-page{
     color: var(--third-color);
@@ -426,10 +428,14 @@ body{
     background-color: var(--third-color);
     border-radius: 50%;
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-social-network:hover .icon-social-network,
 .link-social-network:focus .icon-social-network{
     fill: var(--fourth-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social-network{
     display: flex;
@@ -469,6 +475,8 @@ body{
 .link-clients:hover .icon-clients,
 .link-clients:focus .icon-clients{
     fill: var(--third-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-clients:not(:last-child){
     margin-right: 30px;
@@ -487,6 +495,8 @@ body{
     color: var(--fourth-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-project .title{
     color: var(--first-color);
@@ -607,6 +617,8 @@ body{
 .link-social-footer:focus{
     background-color: var(--third-color);
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .block-address .footer-address{
     padding-top: 20px;
