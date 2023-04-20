@@ -52,6 +52,39 @@
                             <use href="./images/symbol-icon.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <form class="form-modal">
+                        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                        <label class="label-input">
+                            Ім'я
+                            <input type="text" name="date-name" class="input-form-modal">
+                            <svg class="form-modal-icon-svg">
+                                <use href="./images/symbol-icon.svg#icon-person"></use>
+                            </svg>
+                        </label>
+                        <label class="label-input">
+                            Телефон
+                            <input type="tel" name="date-phone" class="input-form-modal">
+                            <svg class="form-modal-icon-svg">
+                                <use href="./images/symbol-icon.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                        <label class="label-input">
+                            Пошта
+                            <input type="email" name="date-mail" class="input-form-modal">
+                            <svg class="form-modal-icon-svg">
+                                <use href="./images/symbol-icon.svg#icon-email"></use>
+                            </svg>
+                        </label>
+                        <label class="label-input">
+                            Коментар
+                            <textarea name="date-comment" placeholder="Введіть текст"></textarea>
+                        </label>
+                        <label class="label-text-license">
+                            <input type="checkbox" class="input-license">
+                            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                        </label>
+                        <button class="btn-form-modal">Відправити</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -368,6 +401,13 @@
                     </li>
                 </ul>
             </div>
+            <form class="form-footer">
+                <label class="label-form-footer">
+                    Підпишіться на розсилку
+                    <input type="text" name="signature" class="input-form-footer" placeholder="E-mail">
+                </label>
+                <button type="submit" class="btn-form-footer">Підписатися</button>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
